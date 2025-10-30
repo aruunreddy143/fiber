@@ -1,11 +1,11 @@
-// Uncomment this line to use CSS modules
-// import styles from './app.module.scss';
-import NxWelcome from './nx-welcome';
+import EsriMap from './components/EsriMap';
+import { LayerManager } from '@fiber-x/shared';
 
 export function App() {
   return (
     <div>
-      <NxWelcome title="@fiber-x/fiberApp" />
+      <EsriMap />
+      <LayerManager />
     </div>
   );
 }

@@ -8,6 +8,21 @@
     },
     {
       "path": "./apps/fiberApp"
+    },
+    {
+      "path": "./apps-e2e"
+    },
+    {
+      "path": "./apps"
+    },
+    {
+      "path": "./fx-lm-e2e"
+    },
+    {
+      "path": "./fx-lm"
+    },
+    {
+      "path": "./shared"
     }
   ]
 }

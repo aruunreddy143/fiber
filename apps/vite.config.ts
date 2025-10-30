@@ -1,25 +1,19 @@
 /// <reference types='vitest' />
 import { defineConfig } from 'vite';
-import { reactRouter } from '@react-router/dev/vite';
-import path from 'path';
+import react from '@vitejs/plugin-react';
 
 export default defineConfig(() => ({
   root: __dirname,
-  cacheDir: '../../node_modules/.vite/apps/fiberApp',
+  cacheDir: '../node_modules/.vite/apps',
   server: {
     port: 4200,
     host: 'localhost',
   },
   preview: {
-    port: 4300,
+    port: 4200,
     host: 'localhost',
   },
-  plugins: [!process.env.VITEST && reactRouter()],
-  resolve: {
-    alias: {
-      '@fiber-x/shared': path.resolve(__dirname, '../../shared/src/index.ts')
-    }
-  },
+  plugins: [react()],
   // Uncomment this if you are using workers.
   // worker: {
   //  plugins: [],
@@ -33,7 +27,7 @@ export default defineConfig(() => ({
     },
   },
   test: {
-    name: '@fiber-x/fiberApp',
+    name: '@fiber-x/apps',
     watch: false,
     globals: true,
     environment: 'jsdom',

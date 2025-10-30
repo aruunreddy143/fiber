@@ -1,0 +1,10 @@
+{
+  "name": "@fiber-x/apps-e2e",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "implicitDependencies": [
+      "@fiber-x/apps"
+    ]
+  }
+}
